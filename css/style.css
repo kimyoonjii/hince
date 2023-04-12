@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+:root {
+  --header-menu-color: #a36d6a;
+  --header-sub-menu-color: #4e3836;
+  --theme-color-primary: #a36d6a;
+  --theme-color-secondary: #4e3836;
+  --theme-color-secondary-light: rgba( 78, 56, 54, 0.3 );
+  --theme-color-third: #6a4f4d;
+  --theme-color-forth: #f8f4f3;
+  --color-wafer: #e4d3d1;
+  --color-hemp: #8c7975;
+  --color-copper-rose: #936d6a;
+}
+
+body {font-family: 'NotoSansKR','akkurat' sans-serif;}
+#wrapper {overflow: hidden;}
+/* 본문 바로가기 */
+#skip-nav {position: fixed; left: 0; top: -40px; width: 100%; z-index: 100000; line-height: 40px; text-align: center; background-color: rgba(0,0,0,0.6); color: #fff; font-size: 16px; transition: top 0.3s;}
+#skip-nav:focus {top: 0;}
+
+/* header */
+#header {position: fixed; width: 100vw; z-index: 100;}
+#header .logo {position: absolute; left: 20px; top: 20px;}
+#header .logo a img {width: 115px; height: 35px;}
+.header-icon {display: flex; position: absolute; right: 20px; top: 20px;}
+.header-icon li {position: relative;}
+div.badge a {display: inline-block; position: absolute; right: 80%; top: 5px; width: 12px; height: 12px; border-radius: 50px; background-color: var(--theme-color-primary); overflow: hidden; color: transparent; text-align: center; font-size: 10px; line-height: 18px; transition: all 0.3s;}
+div.badge a:hover,
+div.badge a:focus {width: 120px; height: 18px; color: #fff; line-height: 18px;}
+
+ /* nav */
+ /* 햄버거 버튼 */
+ nav .menu-btn {display: none; position: fixed; left: 20px; top: 150px; width: 30px; height: 20px; z-index: 99; text-indent: -9999999px;} 
+ nav .menu-btn span {position: absolute; left: 0; top: 50%; transform: translate(0, -50%); width: 100%; height: 1px; background-color: #fff;}
+ nav .menu-btn span::before {content: ''; position: absolute; left: 0; top: 10px; width: 100%; height: 1px; background-color: #fff;}
+ nav .menu-btn span::after {content: ''; position: absolute; left: 0; bottom: 10px; width: 100%; height: 1px; background-color: #fff;}
+
+ nav > ul {position: fixed; left: 0; top: 0; background-color: #fff; width: 300px; z-index: 99; color: var(--header-menu-color);}
+ nav > ul {height: 100vh; overflow: auto; padding-left: 20px; padding-top: 120px;}
+ nav > ul > li {font-size: 30px; line-height: 1.83;}
+ nav > ul > li > ul {font-size: 15px; color: var(--header-sub-menu-color); padding-left: 20px; line-height: 1.83;}
+ nav > ul > li > ul > li {margin-bottom: 5px;}
+ nav > ul > li > ul > li:last-child {margin-bottom: 20px;}
+ nav > ul > li > ul > li > a {display: inline-block; position: relative;}
+ nav > ul > li > ul > li > a::before {content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background-color: var(--header-menu-color); transition: all 0.3s;}
+ nav > ul > li > ul > li:hover a::before {width: 100%;}
+
+
+
+
+
+
+
+
+
+/* main */
+/* main-banner */
+#main-banner {position: relative; width: 100%; height: 100vh; background: url(../img/01_main_slider1_pc_bg2.jpg) center center no-repeat; background-size: cover;}
+.banner-contents {width: 100%; position: absolute; left: 0; bottom: 10%; padding-left: 30px; padding-top: 30px; text-align: left; color: #808080; line-height: 1.84;}
+.banner-contents .category {font-size: 14px; opacity: 0.6;}
+.banner-contents .title {font-family: 'times new roman', 'serif'; font-size: 60px;}
+.banner-contents .sub-title {font-size: 22px; font-weight: 500; margin-top: -10px; margin-bottom: 40px;}
+
+.banner-contents a {font-size: 16px; border-bottom: 1px solid #808080;}
+.banner-contents a:hover {border-color: transparent;}
+
+/* inspires */
+#inspires {width: 100%; height: 100vh;}
+#inspires .container {width: 100%; height: 100%; display: flex;}
+#inspires .container .left-img {width: 50%; background: url(../img/04_main_event_banner1_pc_bg.jpg)center center no-repeat; background-size: cover;}
+#inspires .container .right-contents {position: relative; width: 50%; padding-top: 30px;}
+#inspires .container .right-contents .contents-img {width: 50vh; margin: 0 0 0 30px;}
+#inspires .banner-contents {position: static; color: var(--theme-color-secondary);}
+#inspires .banner-contents .category {margin-bottom: -15px;}
+#inspires .banner-contents .title {line-height: 1.6;}
+#inspires .banner-contents .sub-title {line-height: 1.6;}
+#inspires .banner-contents a {color: var(--theme-color-primary); border-bottom: 1px solid #a36d6a;}
+#inspires .banner-contents a:hover {border-color: transparent;}
+
+
+#inspires .banner-contents h3 {font-family: 'akkurat';}

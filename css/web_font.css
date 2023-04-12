@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'akkurat';
+  font-style: normal;
+  font-weight: 300;
+  src: local('※'),
+    url('../font/AkkuratLLWeb-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'akkurat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('※'),
+    url('../font/AkkuratLLWeb-Bold.woff2') format('woff2');
+}
