@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="yoonji">
+  <meta name="" contents="웹 퍼블리셔가 되기 위한 클론코딩 작업 입니다.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./favicon.png">
   <!-- css -->
@@ -11,6 +12,11 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/web_font.css">
   <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css" type="text/css">
+  <!-- script -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/common.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <title>힌스 클론코딩</title>
 </head>
 <body>
@@ -23,23 +29,26 @@
 
       <ul class="header-icon">
         <li>
-          <a href="#"><img src="./img/account_out_w.svg" alt="로그인"></a>
+          <a href="#" class="account"><img src="./img/account_out_w.svg" alt="로그인"></a>
           <div class="badge">
             <a href="#">신규 회원전용 50%쿠폰</a>
           </div>
         </li>
-        <li><a href="#"><img src="./img/search_out_w.svg" alt="검색"></a></li>
-        <li><a href="#"><img src="./img/cart_out_w.svg" alt="장바구니"></a></li>
+        <li><a href="#" class="search"><img src="./img/search_out_w.svg" alt="검색"></a></li>
+        <li><a href="#" class="cart"><img src="./img/cart_out_w.svg" alt="장바구니"></a></li>
       </ul>
     </header>
 
+    <!-- sub-menu -->
     <nav>
-      
+      <a href="#" class="shop">SHOP<img src="./img/arrow_right_out_w.svg" alt="shop바로가기"></span></a>
+      <!-- 햄버거 버튼 -->
       <a href="#" class="menu-btn"><span>메뉴열기</span></a>
-      <ul>
-        <li>ABOUT</li>
-        <li>COLIECTION</li>
-        <li>SHOP
+
+      <ul class="sub-menu">
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">COLIECTION</a></li>
+        <li><a href="#">SHOP
           <ul>
             <li><a href="#">Fragrance</a></li>
             <li><a href="#">Lip</a></li>
@@ -52,9 +61,9 @@
             <li><a href="#">시향 서비스</a></li>
             <li><a href="#">Look</a></li>
           </ul>
-        </li>
-        <li>STORE</li>
-        <li>COLLECTIVE</li>
+        </a></li>
+        <li><a href="#">STORE</a></li>
+        <li><a href="#">COLLECTIVE</a></li>
         <li>COMMUNITY
           <ul>
             <li><a href="#">Home</a></li>
@@ -70,7 +79,9 @@
       </ul>
     </nav>
     
+    <!-- main -->
     <main id="main">
+      <!-- section1 (main-banner) -->
       <section id="main-banner">
         <div class="banner-contents">
           <p class="category">Petal Touch</p>
@@ -80,6 +91,33 @@
         </div>
       </section>
 
+      <!-- section2 (best) -->
+           <section id="best">
+            <div class="container">
+              <div class="left-img">
+              <div class="image-slide">
+                <div class="box mySwiper">
+                  <ul class="slide swiper-wrapper">
+                    <li class="swiper-slide"><a href="#"><img alt="" src="./img/03_main_mloved_banner1_pc_bg.jpg"></a></li>
+                    <li class="swiper-slide"><a href="#"><img alt="" src="./img/03_main_mloved_banner2_pc_bg .jpg"></a></li>
+                    <li class="swiper-slide"><a href="#"><img alt="" src="./img/03_main_mloved_banner3_pc_bg.jpg"></a></li>
+                    <li class="swiper-slide"><a href="#"><img alt="" src="./img/03_main_mloved_banner4_pc_bg.jpg"></a></li>
+                    <li class="swiper-slide"><a href="#"><img alt="" src="./img/03_main_mloved_banner5_pc_bg .jpg"></a></li>
+                    <li class="swiper-slide"><a href="#"><img alt="" src="./img/03_main_mloved_banner6_pc_bg.jpg"></a></li>
+                  </ul>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="right-contents">
+    
+            </div>
+          </div>
+          </section>
+
+      <!-- section3 (inspires)-->
       <section id="inspires">
         <div class="container">
           <div class="left-img">
@@ -95,24 +133,183 @@
               <p class="title">Slim-Fit Liquid Velvet</p>
               <p class="sub-title">하루 종일 건조함 없이 편안한 수분감을 머금은<br>고밀착 텍스처의 부드럽고 가벼운 페탈벨벳 립</p>
               <a href="#">GO SHOP ></a>
-              <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat provident earum, iste eveniet atque nostrum! Voluptates tenetur error illo harum, id consectetur exercitationem reiciendis vel ullam possimus eum aspernatur? Id veritatis quia, asperiores sapiente iure facere obcaecati minima dignissimos veniam porro. Dicta magnam quos nam minima asperiores doloremque veritatis ut!</h3>
           </div>
           </div>
         </div>
       </section>
 
+      <!-- section4 -->
+      <section id="sns">
+        <div class="container">
+          <div class="left-img">
+          </div>
 
+          <div class="right-contents">
+            <div class="contents-text">
+              <p class="category">SNS</p>
+              <p class="title">@hince_official</p>
+              <a href="#">FLLOW US ON INSTAGRAM ></a>
+            </div>
+            <img src="./img/05_main_sns1_pc_mo_tag.jpg" alt="인스타그램 열기" class="insta-img">
+            <img src="./img/05_main_sns2_pc_mo_tag.jpg" alt="인스타그램 열기" class="insta-img">
+            <img src="./img/05_main_sns3_pc_mo_tag.jpg" alt="인스타그램 열기" class="insta-img">
+            <img src="./img/05_main_sns4_pc_mo_tag.jpg" alt="인스타그램 열기" class="insta-img">
+            <img src="./img/05_main_sns6_pc_mo_tag.jpg" alt="인스타그램 열기" class="insta-img">
+            <img src="./img/05_main_sns7_pc_mo_tag.jpg" alt="인스타그램 열기" class="insta-img">
+            <img src="./img/05_main_sns8_pc_mo_tag.jpg" alt="인스타그램 열기" class="insta-img">
+            <img src="./img/05_main_sns9_pc_mo_tag.jpg" alt="인스타그램 열기" class="insta-img">
+          </div>
+        </div>
+      </section>
 
-
+      <!-- 1:1 상담 -->
+        <a href="#" class="channel-talk">1:1 상담<img src="./img/hince_channeltalk.png" alt=""></a>
     </main>
 
 
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-left">
+            <a href="#" class="footer-logo"><img src="./img/symbol_w.svg" alt="hince"></a>
+            <ul>
+              <li>VIVAWAVE Co., Ltd.  |  CEO. Heo Jaeseok</li>
+              <li>(Hapjeong-dong 364-29) B1F~4F, 18, Dongmak-ro, Mapo-gu, Seoul, Republic of Korea</li>
+              <li>Business Registration <a href="#">No.6328800936</a></li>
+              <li>E-commerce Permit Registration <a href="#">No.2019-SeoulMapo-1141</a></li>
+              <li>Contact. 1644-7161  |  Fax. 02-6008-2717</li>
+              <li>Email.<a href="#">cs@vivawave.co.kr</a> |  Personal Information Manager. </li>
+              <li>Hosting by Cafe24</li>
+              <li class="info"><a href="#">이용약관 |  </a><a href="#">개인정보처리방침</a></li>
+              <li>© 2020 VIVAWAVE Co., Ltd. All rights reserved.</li>
+            </ul>
+          </div>
+          <div class="footer-right">
+            <div class="center">
+              <p class="footer-category">Customer Center</p>
+              <p>1644-7161</p>
+              <p>10:30 - 17:30</p>
+              <p>토,일요일 휴무</p>
+            </div>
+            <div class="order-partner">
+              <ul>
+               <li class="footer-category">Order Tracking</li>
+               <li class="category-list"><a href="#">주문내역</a></li>
+               <li class="category-list"><a href="#">배송조회</a></li>
+              </ul>
 
+              <ul>
+                <li class="footer-category mt-15"><a href="#">Partnership</a></li>
+                <li class="category-list"><a href="#">도매/제휴문의</a></li>
+                <li class="category-list"><a href="#">해외수출문의</a></li>
+              </ul>
+            </div>
+            <div class="sns-list">
+              <ul>
+                <li class="footer-category"><a href="#">SNS</a></li>
+                <li class="category-list"><a href="#">Instagram</a></li>
+                <li class="category-list"><a href="#">Kakaotalk</a></li>
+                <li class="category-list"><a href="#">Twitter</a></li>
+                <li class="category-list"><a href="#">Weilbo</a></li>
+                <li class="category-list"><a href="#">Red</a></li>
+              </ul>
 
+            </div>
+          </div>
+        </div>
 
-
-
+        <div class="footer-bottom">
+          <ul>
+            <li><a href="#"><img src="./img/instagram_out_w.svg" alt="인스타그램"></a></li>
+            <li><a href="#"><img src="./img/kakaotalk_out_w.svg" alt="카카오톡"></a></li>
+            <li><a href="#"><img src="./img/twitter_out_w.svg" alt="트위터"></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
   </div>
+
+  <script>
+    'use strict';
+
+    //header-logo,icon 컬러 변경
+    const header = document.querySelector('#header a img');
+    const account = document.querySelector('.account img');
+    const search = document.querySelector('.search img');
+    const cart = document.querySelector('.cart img');
+
+    function setWhite(){
+    header.setAttribute('src', './img/logo_w.svg');
+    account.setAttribute('src','./img/account_out_w.svg');
+    search.setAttribute('src','./img/search_out_w.svg');
+    cart.setAttribute('src','./img/cart_out_w.svg');
+  }
+
+    function setDark() {
+    header.setAttribute('src', './img/logo.svg');
+    account.setAttribute('src','./img/account_out_d.svg');
+    search.setAttribute('src','./img/search_out_d.svg');
+    cart.setAttribute('src','./img/cart_out_d.svg');
+  }
+
+    checkscroll();
+    window.addEventListener('scroll',function(){
+      checkscroll();
+    },false);
+
+    function checkscroll() {
+      let scrollAmt = window.scrollY;
+
+        if(scrollAmt > 600) {
+          setDark();
+        } else {
+          setWhite();
+        }
+    };
+
+    // 햄버거 버튼 클릭시 sub-menu 나온다
+    document.querySelector('.menu-btn').addEventListener('click',function(){
+      document.querySelector('.sub-menu').classList.add('on');
+      document.querySelector('.logo').classList.add('on');
+
+      setDark();
+    },false);
+
+    // main 클릭시 sub-menu 빠져 나온다
+    document.querySelector('#main').addEventListener('click',function(){
+      document.querySelector('.sub-menu').classList.remove('on');
+      document.querySelector('.logo').classList.remove('on');    
+      checkscroll();
+    },false);
+
+
+
+    //
+    var slide1 = new Swiper(".mySwiper", {
+      slidesPerView: 1, // 한 슬라이드에 보여줄 갯수
+      spaceBetween: 20, // 슬라이드 사이 여백
+      centeredSlides: true,    //센터모드
+      slidesPerGroup: 1, // 넘어가는 슬라이드 갯수
+
+      autoplay: {     //자동슬라이드 (false-비활성화)
+        delay: 2500, // 시간 설정
+        disableOnInteraction: false, // false-스와이프 후 자동 재생
+      },
+
+      loop: true, // 슬라이드 반복 여부
+      loopFillGroupWithBlank: true,  //수가 맞지 않을 경우 빈칸으로 메우기
+      loopAdditionalSlides : 1, // 슬라이드 반복 시 마지막 슬라이드에서 다음 슬라이드가 보여지지 않는 현상 수정
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: { 
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>
