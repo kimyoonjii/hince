@@ -24,6 +24,9 @@ body {font-family: 'NotoSansKR','akkurat' sans-serif;}
 .mt-15 {margin-top: 15px;}
 .mobile {display: none !important;}
 
+/* 폰트 */
+.time {font-family: 'times new roman', 'serif';}
+.georgia {font-family: 'Georgia', serif;}
 
 
 
@@ -251,7 +254,7 @@ div.badge a:focus {width: 120px; height: 18px; color: #fff; line-height: 18px;}
 
 
 /* */
-@media all and (max-width: 560px) {
+@media all and (max-width: 890px) {
   .pc {display: none !important;}
   .mobile {display: block !important;}
 
@@ -308,5 +311,28 @@ div.badge a:focus {width: 120px; height: 18px; color: #fff; line-height: 18px;}
   #sns .container .right-contents .insta-img:nth-of-type(7),
   #sns .container .right-contents .insta-img:nth-of-type(8) {width: 45vw;}
 
+  /* footer */
+  #m-footer {background-color: var(--theme-color-primary); padding: 40px 10px 10px;}
+  .m-footer-logo {display: inline-block; width: 40px; margin-bottom: 30px;}
   
+  .m-footer-category {color: #fff;}
+  .m-footer-category > ul {line-height: 1.83;}
+  .m-footer-category > ul > li {font-size: 16px; font-weight: bold; opacity: 0.9;}
+  .m-footer-category > ul > li > a {display: block; width: 100%; position: relative;}
+  .m-footer-category > ul > li > a::after {position: absolute; content: ''; width: 12px; height: 1.5px; right: 0; top: 50%; transform: translate(0, -50%); background-color: #fff; display: none;}
+  .m-footer-category > ul > li > a > i {display: block; font-size: 15px; font-weight: 200; position: absolute; right: 0; top: 50%; transform: translate(0, -50%);}
+  .m-footer-category > ul > li > ul {height: 0; visibility: hidden;}
+  /* on이 붙었을때 */
+  .m-footer-category > ul > li.on > ul {height: auto; visibility: unset;}
+  .m-footer-category > ul > li.on > a > i {display: none;}
+  .m-footer-category > ul > li.on > a::after {display: block;}
+
+  .m-footer-category > ul > li > ul > li {font-size: 11px; opacity: 0.8;}
+  .m-footer-category > ul > li > ul > li.georgia {font-family: 'Georgia', serif; font-size: 30px; font-weight: bold; margin-bottom: 5px;}
+  .m-info {font-size: 11px; color: #fff; opacity: 0.65; line-height: 1.8; margin-top: 15px;}
+  .m-info > p a {border-bottom: 1px solid rgba(255, 255, 255, 0.5);}
+  .m-sns-list ul {display: flex; margin: 30px 0 20px;}
+  .m-sns-list ul li a {display: inline-block; width: 30px; height: 30px;}
+
+
 }

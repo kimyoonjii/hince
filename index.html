@@ -212,7 +212,7 @@
     </main>
 
 
-    <footer id="footer">
+    <footer id="footer" class="pc">
       <div class="container">
         <div class="footer-top">
           <div class="footer-left">
@@ -272,7 +272,68 @@
       </div>
     </footer>
 
+    <footer id="m-footer" class="mobile">
+      <a href="#" class="m-footer-logo"><img src="./img/symbol_w.svg" alt="hince"></a>
+      <div class="m-footer-category">
+        <ul>
+          <li><a href="#" class="time">Customer Center<i class="fa-solid fa-plus"></i></a>
+            <ul>
+              <li class="georgia">1644-7161</li>
+              <li>10:30 - 17:30</li>
+              <li>토,일요일 휴무</li>
+            </ul>
+          </li>
+          <li><a href="#" class="time">Order Tracking<i class="fa-solid fa-plus"></i></a>
+            <ul>
+              <li class="category-list"><a href="#">주문내역</a></li>
+              <li class="category-list"><a href="#">배송조회</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="time">Partnership<i class="fa-solid fa-plus"></i></a>
+            <ul>
+              <li class="category-list"><a href="#">도매/제휴문의</a></li>
+              <li class="category-list"><a href="#">해외수출문의</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="time">SNS<i class="fa-solid fa-plus"></i></a>
+            <ul>
+              <li class="category-list"><a href="#">Instagram</a></li>
+              <li class="category-list"><a href="#">Kakaotalk</a></li>
+              <li class="category-list"><a href="#">Twitter</a></li>
+              <li class="category-list"><a href="#">Weilbo</a></li>
+              <li class="category-list"><a href="#">Red</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="time">Company / Legal<i class="fa-solid fa-plus"></i></a>
+            <ul>
+              <li>VIVAWAVE Co., Ltd.  |  CEO. Heo Jaeseok</li>
+              <li>(Hapjeong-dong 364-29) B1F~4F, 18, Dongmak-ro, Mapo-gu, Seoul, Republic of Korea</li>
+              <li>Business Registration <a href="#">No.6328800936</a></li>
+              <li>E-commerce Permit Registration <a href="#">No.2019-SeoulMapo-1141</a></li>
+              <li>Contact. 1644-7161  |  Fax. 02-6008-2717</li>
+              <li>Email.<a href="#">cs@vivawave.co.kr</a> |  Personal Information Manager. </li>
+              <li>Hosting by Cafe24</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="m-info">
+        <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        <p>© 2020 VIVAWAVE Co., Ltd. All rights reserved.</p>
+      </div>
+      <div class="m-sns-list">
+        <ul>
+          <li><a href="#"><img src="./img/instagram_out_w.svg" alt="인스타그램"></a></li>
+          <li><a href="#"><img src="./img/kakaotalk_out_w.svg" alt="카카오톡"></a></li>
+          <li><a href="#"><img src="./img/twitter_out_w.svg" alt="트위터"></a></li>
+        </ul>
+      </div>
+    </footer>
   </div>
+
+
+
+
 
   <script>
     'use strict';
@@ -365,6 +426,12 @@
       },false);
     });    
 
+    //  m-footer
+    document.querySelectorAll('.m-footer-category > ul > li').forEach(function(list){
+      list.addEventListener('click',function(){
+        this.classList.toggle('on');
+      },false);
+    });
 
   </script>
 </body>
