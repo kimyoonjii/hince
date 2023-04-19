@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko"> 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,6 @@
   <!-- css -->
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/web_font.css">
   <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css" type="text/css">
   <!-- script -->
   <script src="./js/jquery-3.6.0.min.js"></script>
@@ -49,7 +48,7 @@
         <li><a href="#">ABOUT</a></li>
         <li><a href="#">COLIECTION</a></li>
         <li><a href="#">SHOP
-          <ul>
+          <ul class="pc">
             <li><a href="#">Fragrance</a></li>
             <li><a href="#">Lip</a></li>
             <li><a href="#">Eye</a></li>
@@ -65,16 +64,13 @@
         <li><a href="#">STORE</a></li>
         <li><a href="#">COLLECTIVE</a></li>
         <li>COMMUNITY
-          <ul>
+          <ul class="pc">
             <li><a href="#">Home</a></li>
             <li><a href="#">Notice</a></li>
             <li><a href="#">Q&A</a></li>
             <li><a href="#">Event</a></li>
             <li><a href="#">Review</a></li>
           </ul>
-        </li>
-        <li>
-
         </li>
       </ul>
     </nav>
@@ -86,7 +82,9 @@
         <div class="banner-contents">
           <p class="category">Petal Touch</p>
           <p class="title">Slim-Fit Liquid Velvet</p>
-          <p class="sub-title">가볍지만 선명하게,건조함을 잊은 꽃잎 피니쉬</p>
+          <p class="sub-title pc">가볍지만 선명하게,건조함을 잊은 꽃잎 피니쉬</p>
+          <p class="sub-title mobile">가볍지만 선명하게,<br>건조함을 잊은 꽃잎 피니쉬</p>
+          
           <a href="#">GO SHOP ></a>
         </div>
       </section>
@@ -94,7 +92,11 @@
       <!-- section2 (best) -->
            <section id="best">
             <div class="container">
-              <div class="left-img">
+              <div class="contents-text mobile">
+                <p class="category">BEST</p>
+                <p class="title">Most Loved</p>
+              </div>
+            <div class="left-img">
               <div class="image-slide">
                 <div class="box mySwiper">
                   <ul class="slide swiper-wrapper">
@@ -112,7 +114,45 @@
             </div>
     
             <div class="right-contents">
-    
+              <div class="contents-text pc">
+                <p class="category">BEST</p>
+                <p class="title">Most Loved</p>
+              </div>
+              <ul>
+                <li>
+                  <a href="#" class="pd-img on"><img src="./img/03_main_mloved1_pc_mo_tag.jpg" alt=""></a>
+                  <p class="pd-title">트루 디멘션 레이어링 치크</p>
+                  <p class="pd-name">얼루어 인디에어</p>
+                  <a href="#" class="shop">SHOP</a>
+                </li>
+                <li>
+                  <a href="#" class="pd-img"><img src="./img/03_main_mloved2_pc_mo_tag.jpg" alt=""></a>
+                  <p class="pd-title">트루 디멘션 레이어링 치크</p>
+                  <p class="pd-name">얼루어 인디에어</p>
+                  <a href="#" class="shop">SHOP</a>
+                </li>
+                <li>
+                  <a href="#" class="pd-img"><img src="./img/03_main_mloved3_pc_mo_tag.jpg" alt=""></a>
+                  <p class="pd-title">트루 디멘션 레이어링 치크</p>
+                  <p class="pd-name">얼루어 인디에어</p>
+                  <a href="#" class="shop">SHOP</a>
+                </li>
+                <li><a href="#" class="pd-img"><img src="./img/03_main_mloved4_pc_mo_tag.jpg" alt=""></a>
+                  <p class="pd-title">트루 디멘션 레이어링 치크</p>
+                  <p class="pd-name">얼루어 인디에어</p>
+                  <a href="#" class="shop">SHOP</a>
+                </li>
+                <li><a href="#" class="pd-img"><img src="./img/03_main_mloved5_pc_mo_tag.jpg" alt=""></a>
+                  <p class="pd-title">트루 디멘션 레이어링 치크</p>
+                  <p class="pd-name">얼루어 인디에어</p>
+                  <a href="#" class="shop">SHOP</a>
+                </li>
+                <li><a href="#" class="pd-img"><img src="./img/03_main_mloved6_pc_mo_tag.jpg" alt=""></a>
+                  <p class="pd-title">트루 디멘션 레이어링 치크</p>
+                  <p class="pd-name">얼루어 인디에어</p>
+                  <a href="#" class="shop">SHOP</a>
+                </li>
+              </ul>
             </div>
           </div>
           </section>
@@ -120,15 +160,20 @@
       <!-- section3 (inspires)-->
       <section id="inspires">
         <div class="container">
+          <div class="banner-contents mobile">
+            <p class="category">슬림 핏 리퀴드 벨벳</p>
+            <p class="title">Slim-Fit Liquid Velvet</p>
+            <p class="sub-title">하루 종일 건조함 없이 편안한 수분감을 머금은<br>고밀착 텍스처의 부드럽고 가벼운 페탈벨벳 립</p>
+            <a href="#">GO SHOP ></a>
+        </div>
           <div class="left-img">
-
           </div>
-          
+               
           <div class="right-contents">
-            <div class="contents-img">
+            <div class="contents-img pc">
               <img src="./img/04_main_event_img1_pc_mo_tag.jpg" alt="립스틱">
             </div>
-            <div class="banner-contents">
+            <div class="banner-contents pc">
               <p class="category">슬림 핏 리퀴드 벨벳</p>
               <p class="title">Slim-Fit Liquid Velvet</p>
               <p class="sub-title">하루 종일 건조함 없이 편안한 수분감을 머금은<br>고밀착 텍스처의 부드럽고 가벼운 페탈벨벳 립</p>
@@ -138,10 +183,10 @@
         </div>
       </section>
 
-      <!-- section4 -->
+      <!-- section4 (sns)-->
       <section id="sns">
         <div class="container">
-          <div class="left-img">
+          <div class="left-img pc">
           </div>
 
           <div class="right-contents">
@@ -213,7 +258,6 @@
                 <li class="category-list"><a href="#">Weilbo</a></li>
                 <li class="category-list"><a href="#">Red</a></li>
               </ul>
-
             </div>
           </div>
         </div>
@@ -271,7 +315,7 @@
     // 햄버거 버튼 클릭시 sub-menu 나온다
     document.querySelector('.menu-btn').addEventListener('click',function(){
       document.querySelector('.sub-menu').classList.add('on');
-      document.querySelector('.logo').classList.add('on');
+      document.querySelector('.logo').classList.add('on');//logo top:-120px 올라감
 
       setDark();
     },false);
@@ -285,7 +329,7 @@
 
 
 
-    //
+    // section2 (best) img slide
     var slide1 = new Swiper(".mySwiper", {
       slidesPerView: 1, // 한 슬라이드에 보여줄 갯수
       spaceBetween: 20, // 슬라이드 사이 여백
@@ -310,6 +354,18 @@
         prevEl: ".swiper-button-prev",
       },
     });
+
+    //section2 (best) 
+    document.querySelectorAll('#best a.pd-img').forEach(function(imges,i){ //전체한테 이벤트
+      imges.addEventListener('click',function(){ //눌렀을때 어떤 행동을 할껀지
+        document.querySelectorAll('#best a.pd-img').forEach(function(img){ 
+          img.classList.remove('on');
+        })
+        this.classList.add('on');
+      },false);
+    });    
+
+
   </script>
 </body>
 </html>
