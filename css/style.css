@@ -258,6 +258,8 @@ div.badge a:focus {width: 120px; height: 18px; color: #fff; line-height: 18px;}
   .pc {display: none !important;}
   .mobile {display: block !important;}
 
+  #header .logo a img {width: 100px; height: 35px;}
+
   /* main-banner */
   #main-banner {position: relative; width: 100%; height: 100vh; background: url(../img/01_main_slider1_mo_bg.jpeg) center center no-repeat; background-size: cover;}
   div.badge a {display: inline-block; position: absolute; right: 80%; top: 5px; width: 120px; height: 18px; border-radius: 50px; background-color: var(--theme-color-primary); color: #fff; text-align: center; font-size: 10px; line-height: 18px;}
