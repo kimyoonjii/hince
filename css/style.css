@@ -253,7 +253,7 @@ div.badge a:focus {width: 120px; height: 18px; color: #fff; line-height: 18px;}
 
 
 
-/* */
+/* 미디어쿼리 */
 @media all and (max-width: 890px) {
   .pc {display: none !important;}
   .mobile {display: block !important;}
@@ -333,6 +333,5 @@ div.badge a:focus {width: 120px; height: 18px; color: #fff; line-height: 18px;}
   .m-info > p a {border-bottom: 1px solid rgba(255, 255, 255, 0.5);}
   .m-sns-list ul {display: flex; margin: 30px 0 20px;}
   .m-sns-list ul li a {display: inline-block; width: 30px; height: 30px;}
-
 
 }
