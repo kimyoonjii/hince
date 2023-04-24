@@ -11,10 +11,10 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <!-- script -->
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="./js/common.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <title>portfolio-4 | 메인페이지 hince</title>
 </head>
@@ -40,9 +40,9 @@
 
     <!-- sub-menu -->
     <nav>
-      <a href="#" class="shop">SHOP<img src="./img/arrow_right_out_w.svg" alt="shop바로가기"></span></a>
+      <a href="#" class="shop-w">SHOP<img src="./img/arrow_right_out_w.svg" alt="shop바로가기"></span></a>
       <!-- 햄버거 버튼 -->
-      <a href="#" class="menu-btn"><span>메뉴열기</span></a>
+      <a href="#" class="menu-btn-w"><span>메뉴열기</span></a>
 
       <ul class="sub-menu">
         <li><a href="#">ABOUT</a></li>
@@ -373,7 +373,7 @@
     };
 
     // 햄버거 버튼 클릭시 sub-menu 나온다
-    document.querySelector('.menu-btn').addEventListener('click',function(){
+    document.querySelector('.menu-btn-w').addEventListener('click',function(){
       document.querySelector('.sub-menu').classList.add('on');
       document.querySelector('.logo').classList.add('on');//logo top:-120px 올라감
 

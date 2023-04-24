@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="yoonji">
+  <meta name="" contents="웹 퍼블리셔가 되기 위한 클론코딩 작업 입니다.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../favicon.png">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../lib/fontawesome/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- script -->
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/common.js"></script>
+  <title>portfolio-4 | about페이지 hince</title>
+</head>
+<body>
+  
+  <div id="wrapper">
+    <a href="#main" id="skip-nav">본문바로가기</a>
+
+        <!-- header -->
+        <header id="header">
+          <h1 class="logo"><a href="#"><img src="../img/logo.svg" alt="hince"></a></h1>
+    
+          <ul class="header-icon">
+            <li>
+              <a href="#" class="account"><img src="../img/account_out_d.svg" alt="로그인"></a>
+              <div class="badge">
+                <a href="#">신규 회원전용 50%쿠폰</a>
+              </div>
+            </li>
+            <li><a href="#" class="search"><img src="../img/search_out_d.svg" alt="검색"></a></li>
+            <li><a href="#" class="cart"><img src="../img/cart_out_d.svg" alt="장바구니"></a></li>
+          </ul>
+        </header>
+
+        <!-- sub-menu -->
+    <nav>
+      <a href="#" class="shop-d">SHOP<img src="../img/arrow_right_out_d.svg" alt="shop바로가기"></span></a>
+      <!-- 햄버거 버튼 -->
+      <a href="#" class="menu-btn-d"><span>메뉴열기</span></a>
+
+      <ul class="sub-menu">
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">COLIECTION</a></li>
+        <li><a href="#">SHOP
+          <ul class="pc">
+            <li><a href="#">Fragrance</a></li>
+            <li><a href="#">Lip</a></li>
+            <li><a href="#">Eye</a></li>
+            <li><a href="#">Face</a></li>
+            <li><a href="#">Nail</a></li>
+            <li><a href="#">Set</a></li>
+            <li><a href="#">Object</a></li>
+            <li><a href="#">Tool</a></li>
+            <li><a href="#">시향 서비스</a></li>
+            <li><a href="#">Look</a></li>
+          </ul>
+        </a></li>
+        <li><a href="#">STORE</a></li>
+        <li><a href="#">COLLECTIVE</a></li>
+        <li>COMMUNITY
+          <ul class="pc">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Notice</a></li>
+            <li><a href="#">Q&A</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="#">Review</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main">
+      <section id="about-banner">
+        <div id="about-contents">
+          <h1 class="logo"><a href="#"><img src="../img/logo_w.svg" alt="hince"></a></h1>
+          <p class="about-text">힌스는 밀도있고 풍부한 컬러를 통해 당신의 고유한 분위기를 쌓아 올려<br>잠재되어있는 본연의 아름다움을 발현시키는 무드 내러티브 MOOD NARRATIVE 메이크업 브랜드입니다.<br>힌스는 스스로의 신념과 열망에 확신을 가지고 보다 열정적으로 살아가는 삶에 영감을 제공합니다.</p>
+          <p>
+            hince is a Mood-Narrative makeup brand that expresses your full  potential by building on natural beauty unique to you with its dense and rich colors.<br>
+            We provide inspiration to have confidence in your beliefs and aspirations for a more passionate life.</p>
+          <ul class="about-list">
+            <li>Mood</li>
+            <li>Tone</li>
+            <li>Attitude</li>
+          </ul>
+        </div> 
+        <div id="about-contents-bottom">
+          <img src="../img/h_logo.svg" alt="">
+        </div>       
+    </section>
+
+
+
+          <!-- 1:1 상담 -->
+          <a href="#" class="channel-talk">1:1 상담<img src="../img/hince_channeltalk.png" alt="카카오톡 1:1 상담"></a>
+    </main>
+    
+
+  </div>
+
+
+
+  <script>
+    'use strict';
+
+  //   //header-logo,icon 컬러 변경
+  //   const header = document.querySelector('#header a img');
+  //   const account = document.querySelector('.account img');
+  //   const search = document.querySelector('.search img');
+  //   const cart = document.querySelector('.cart img');
+
+  //   function setWhite(){
+  //   header.setAttribute('src', '../img/logo_w.svg');
+  //   account.setAttribute('src','../img/account_out_w.svg');
+  //   search.setAttribute('src','../img/search_out_w.svg');
+  //   cart.setAttribute('src','../img/cart_out_w.svg');
+  // }
+
+  //   function setDark() {
+  //   header.setAttribute('src', '../img/logo.svg');
+  //   account.setAttribute('src','../img/account_out_d.svg');
+  //   search.setAttribute('src','../img/search_out_d.svg');
+  //   cart.setAttribute('src','../img/cart_out_d.svg');
+  // }
+
+  //   checkscroll();
+  //   window.addEventListener('scroll',function(){
+  //     checkscroll();
+  //   },false);
+
+  //   function checkscroll() {
+  //     let scrollAmt = window.scrollY;
+
+  //       if(scrollAmt > 600) {
+  //         setDark();
+  //       } else {
+  //         setWhite();
+  //       }
+  //   };
+
+    // 햄버거 버튼 클릭시 sub-menu 나온다
+    document.querySelector('.menu-btn-d').addEventListener('click',function(){
+      document.querySelector('.sub-menu').classList.add('on');
+      document.querySelector('.logo').classList.add('on');//logo top:-120px 올라감
+
+      setDark();
+    },false);
+
+    // main 클릭시 sub-menu 빠져 나온다
+    document.querySelector('#main').addEventListener('click',function(){
+      document.querySelector('.sub-menu').classList.remove('on');
+      document.querySelector('.logo').classList.remove('on');    
+      checkscroll();
+    },false);
+  </script>
+
+</body>
+</html>
