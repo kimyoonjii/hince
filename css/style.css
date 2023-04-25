@@ -263,12 +263,13 @@ div.badge a:focus {width: 120px; height: 18px; color: #fff; line-height: 18px;}
 /* sub-page */
 /* about */
 #about-banner {position: relative; width: 100%; height: 100vh; background: url(../img/about_bg_pc.jpg) center center no-repeat; background-size: cover;}
-
+/* width: 100%;주고 안주고 글씨영역이 다르다? */
 #about-contents {width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff;}
 #about-contents .logo {display: block; text-align: center; margin-bottom: 30px;}
 #about-contents .logo img {width: 165px; height: 50px;}
-.about-text {text-align: center; font-size: 20px; font-weight: 500; line-height: 1.6;}
-.about-list {display: flex; font-size: 28px;}
+.about-text-ko {text-align: center; font-size: 20px; font-weight: 500; line-height: 1.6;}
+.about-text-en {text-align: center; font-size: 14px; font-weight: normal; line-height: 1.6; opacity: 0.8; margin-top: 15px;}
+.about-list {display: flex; font-size: 28px; justify-content: center; margin-top: 10px;}
 .about-list li {font-family: 'times new roman', 'serif'; margin: 0 12px;}
 
 #about-contents-bottom {position: fixed; bottom: 30px; left: 50%; transform: translate(-50%, 0);}
